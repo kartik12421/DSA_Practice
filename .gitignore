@@ -1,0 +1,13 @@
+# Compiled class files
+*.class
+
+# Temporary files
+tempCodeRunnerFile.java
+
+# IDE files (optional, adjust as needed)
+# .idea/
+# *.iml
+# VSWorkspace/
+
+# Logs
+*.log
