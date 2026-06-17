@@ -24,8 +24,8 @@ class Circle extends Shapes {
 
 public class inheritance {
     public static void main(String[] args){
-        Triange t1 = new Triange();
-        t1.area();
-        t1.area(4, 6);
+        // Triange t1 = new Triange();
+        // t1.area();
+        // t1.area(4, 6);
     }
 }
