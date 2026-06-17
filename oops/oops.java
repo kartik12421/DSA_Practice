@@ -26,6 +26,27 @@ class Student {
     }
 }
 
+class Student2 {
+    String name;
+    int age;
+
+    public void printInfo() {
+        System.out.println(this.name);
+        System.out.println(this.age);
+    }
+
+    //constructor
+    Student2(Student2 s3) {
+        this.name = s3.name;
+        this.age = s3.age;
+    }
+
+    public Student2() {
+    }
+
+    
+}
+
 public class oops {
     public static void main(String[] args){
         Pen pen1 = new Pen();
@@ -38,8 +59,14 @@ public class oops {
         pen2.color = "black";
         pen2.printColor();
 
-        Student s1 = new Student("Kartik", 20);
+        // Student s1 = new Student("Kartik", 20);
+        // s1.printInfo();
 
-        s1.printInfo();
+        // Student2 st = new Student2();
+        // st.name = "Kartik";
+        // st.age = 20;
+
+        // Student2 st2  = new Student2(st);
+        // st2.printInfo();
     }
 }
