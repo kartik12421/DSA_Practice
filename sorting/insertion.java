@@ -11,6 +11,7 @@ public class insertion {
         int arr[] = {7, 8, 3, 1, 2};
 
         //insertion sort
+        //time complexity = O(n^2)
         for (int i = 1; i < arr.length - 1; i++){
             int current = arr[i];
             int j = i - 1;
