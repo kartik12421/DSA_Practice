@@ -1,7 +1,7 @@
 
 public class findFirstAndLastOccurence {
     public static int first = -1;
-    public static int last = -1;
+    public static int last = -1; 
 
     public static void findOccurance(String str, int idx, char element){
         char currChar = str.charAt(idx);
