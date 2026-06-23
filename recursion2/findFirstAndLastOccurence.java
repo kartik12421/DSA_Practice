@@ -1,29 +1,30 @@
-
 public class findFirstAndLastOccurence {
+
     public static int first = -1;
-    public static int last = -1; 
+    public static int last = -1;
 
-    public static void findOccurance(String str, int idx, char element){
-        char currChar = str.charAt(idx);
+    public static void findOccurrence(String str, int idx, char element) {
 
-        if(idx == str.length()) {
-            System.out.println(first);
-            System.out.println(last);
+        if (idx == str.length()) {
+            System.out.println("First = " + first);
+            System.out.println("Last = " + last);
             return;
         }
 
-        if(currChar == element) {
-            if(first == -1) {
+        char currChar = str.charAt(idx);
+
+        if (currChar == element) {
+            if (first == -1) {
                 first = idx;
-            } else {
-                last = idx;
             }
+            last = idx;
         }
-        findOccurance(str, idx + 1, element);
+
+        findOccurrence(str, idx + 1, element);
     }
-    
+
     public static void main(String[] args) {
         String str = "abaacdaefaah";
-        findOccurance(str, str.length() - 1, 'a');
+        findOccurrence(str, 0, 'a');
     }
 }
