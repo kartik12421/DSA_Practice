@@ -22,4 +22,4 @@ public class subSequence {
     }
 }
 
-//time complexity - O(n)
+//time complexity - O(2*n)
